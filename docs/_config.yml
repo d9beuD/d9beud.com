@@ -2,6 +2,9 @@ url: "https://d9beud.com"
 baseurl: ""
 title: "Vincent Bathelier"
 
+sass:
+  sass_dir: _sass
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

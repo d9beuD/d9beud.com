@@ -5,9 +5,13 @@
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
     {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <script src="/assets/js/theme.js"></script>
+    <script src="https://kit.fontawesome.com/431529382e.js" crossorigin="anonymous" async></script>
   </head>
   <body>
     {{ content }}
+    <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   </body>
 </html>

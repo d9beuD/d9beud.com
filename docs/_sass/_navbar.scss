@@ -1,0 +1,7 @@
+.navbar {
+  background-color: var(--bs-bg-light);
+
+  @include color-mode(dark) {
+    background-color: var(--bs-bg-dark);
+  }
+}

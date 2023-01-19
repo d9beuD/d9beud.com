@@ -1,8 +1,8 @@
 ---
-layout: default
-title: "Happy Jekylling!"
+layout: home
+title: "Porfolio"
 ---
 
-## You're ready to go!
+## Bienvenue sur mon portfolio !
 
 Start developing your Jekyll website.

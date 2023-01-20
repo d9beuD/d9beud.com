@@ -29,7 +29,7 @@
 
   const showActiveTheme = theme => {
     const icons = { light: 'fa-sun-bright', dark: 'fa-moon-stars', auto: 'fa-circle-half-stroke' }
-    const activeThemeIconContainer = document.querySelector('.dropdown-toggle.theme-icon-active')
+    const activeThemeIconContainer = document.querySelector('.dropdown-toggle.theme-icon-active>.theme-toggle-icon')
     const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
     const activeThemeIcon = document.createElement('i')
 

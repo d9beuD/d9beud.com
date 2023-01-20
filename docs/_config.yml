@@ -1,9 +1,9 @@
+domain: d9beud.com
 url: "https://d9beud.com"
 baseurl: ""
 title: "Vincent Bathelier"
 
-sass:
-  sass_dir: _sass
+markdown: GFM
 
 plugins:
   - jekyll-feed
@@ -13,3 +13,6 @@ plugins:
 locale: fr_FR
 twitter:
   username: d9beuD
+
+social:
+  github: https://github.com/d9beuD

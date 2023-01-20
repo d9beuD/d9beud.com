@@ -6,3 +6,9 @@
   font-family: Menlo, Monaco, "Courier New", monospace;
   font-weight: bold;
 }
+
+.nav-separator {
+  border-right: $border-width solid var(--bs-border-color);
+  margin-left: $spacer / 2;
+  margin-right: $spacer / 2;
+}

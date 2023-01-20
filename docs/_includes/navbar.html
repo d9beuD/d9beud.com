@@ -19,10 +19,22 @@
 
     <div id="main-navbar-collapse" class="collapse navbar-collapse">
       <ul class="navbar-nav">
-        <li class="nav-item"><a href="/blog/" class="nav-link">Blog</a></li>
+        <li class="nav-item">
+          <a href="/blog/" class="nav-link">
+            <i class="fa-solid fa-quote-left"></i>
+            Blog
+          </a>
+        </li>
       </ul>
 
       <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.social.github }}" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <span class="d-md-none"> GitHub </span>
+          </a>
+        </li>
+        <li class="nav-separator"></li>
         <li class="nav-item dropdown">
           <a
             href="#"
@@ -31,7 +43,10 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <i class="fa-solid fa-sun-bright"></i>
+            <span class="theme-toggle-icon">
+              <i class="fa-solid fa-sun-bright"></i>
+            </span>
+            <span class="d-md-none"> Thème </span>
           </a>
           <ul class="dropdown-menu dropdown-menu-end px-2">
             <li>

@@ -2,6 +2,7 @@
 @import "bootstrap/functions";
 
 // 2. Include any default variable overrides here
+$enable-negative-margins: true;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "bootstrap/variables";
@@ -33,8 +34,8 @@
 // @import "bootstrap/accordion";
 // @import "bootstrap/breadcrumb";
 // @import "bootstrap/pagination";
-// @import "bootstrap/badge";
-// @import "bootstrap/alert";
+@import "bootstrap/badge";
+@import "bootstrap/alert";
 // @import "bootstrap/progress";
 // @import "bootstrap/list-group";
 // @import "bootstrap/close";

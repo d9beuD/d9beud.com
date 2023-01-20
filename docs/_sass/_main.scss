@@ -35,13 +35,13 @@ body {
 }
 
 .section {
-  padding: $spacer * 2 0;
+  padding: $spacer * 4 0;
 
   &:nth-child(even) {
     background-color: var(--bs-secondary-bg);
     position: relative;
-    margin-top: calc(var(--d9-triangle-height) / 2);
-    margin-bottom: calc(var(--d9-triangle-height) / 2);
+    margin-top: var(--d9-triangle-height);
+    margin-bottom: var(--d9-triangle-height);
 
     &::before, &::after {
       content: "";
@@ -67,6 +67,17 @@ body {
       margin-bottom: $spacer * 1.5;
     }
   }
+}
+
+@include media-breakpoint-up(md) {
+  .position-md-sticky {
+    position: sticky;
+  }
+}
+
+.footer {
+  padding: $spacer 0;
+  border-top: $border-width solid var(--bs-border-color);
 }
 
 @import "history";

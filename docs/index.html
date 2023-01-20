@@ -22,14 +22,14 @@ title: "Accueil"
             parallèle, j'ai lancé mon activité de développeur web freelance.
           </p>
           <div>
-            <button class="btn btn-secondary mb-1">
-              <i class="fa-solid fa-timeline-arrow"></i>
+            <a class="btn btn-secondary mb-1" href="#mon-parcours">
+              <i class="fa-solid fa-arrow-right-long"></i>
               Mon parcours
-            </button>
-            <button class="btn btn-primary mb-1">
+            </a>
+            <a class="btn btn-primary mb-1" href="#mes-projets">
               <i class="fa-solid fa-rectangle-vertical-history"></i>
               Mes projets
-            </button>
+            </a>
           </div>
         </div>
 
@@ -44,14 +44,25 @@ title: "Accueil"
     </div>
   </section>
 
-  <section class="section">
+  <section id="mon-parcours" class="section">
     <div class="container">
-      <h2>Mon parcours</h2>
-
-      <div class="history">
-        <div class="history-timeline">
-          <div class="history-timeline-icon">
-            <!-- <i class="fa-solid fa-arrow-up-long"></i> -->
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Mon parcours</h2>
+          {% include career.html %}
+        </div>
+        <div class="col">
+          <div class="position-md-sticky top-0 pt-3 mt-md-n3">
+            <div class="alert alert-secondary">
+              <h5 class="alert-heading">Précisions</h5>
+              <p class="mb-0">
+                RNCP, ou Répertoire National de la Certification
+                Professionnelle, permet à son titulaire de certifier les
+                compétences, aptitudes et connaissances nécessaires à l’exercice
+                d’un métier ou d’une activité correspondant à un domaine
+                professionnel.
+              </p>
+            </div>
           </div>
         </div>
       </div>

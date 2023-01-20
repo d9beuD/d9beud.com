@@ -55,10 +55,14 @@ body {
       border-right: 100vw solid var(--bs-secondary-bg);
     }
 
-    &::after {
+    &:not(:last-of-type)::after {
       bottom: calc(var(--d9-triangle-height) * -1);
       border-bottom: var(--d9-triangle-height) solid transparent;
       border-left: 100vw solid var(--bs-secondary-bg);
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
     }
   }
 

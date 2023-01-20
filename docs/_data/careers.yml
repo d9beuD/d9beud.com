@@ -62,7 +62,7 @@
     - Java
 
 - name: Diplômé d'un BTS
-  when: 2018
+  when: 2016 — 2018
   description: |
     Ce BTS SIO (Services Informatiques aux Organisations) option SLAM (Solutions 
     Logiciels et Applications Métiers — développeur) m'a permis d'améliorer mes 

@@ -1,0 +1,16 @@
+.history {
+  position: relative;
+}
+
+.history-timeline {
+  background-color: var(--bs-body-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  .history-timeline-icon {
+    background-color: var(--bs-secondary-bg);
+    font-size: map-get($display-font-sizes, 1);
+  }
+}

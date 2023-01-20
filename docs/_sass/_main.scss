@@ -1,0 +1,73 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/variables-dark";
+@import "bootstrap/maps";
+@import "bootstrap/mixins";
+
+:root {
+  --d9-triangle-height: 1.5rem;
+}
+
+@include media-breakpoint-up(sm) {
+  :root {
+    --d9-triangle-height: 2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  :root {
+    --d9-triangle-height: 3rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  :root {
+    --d9-triangle-height: 4rem;
+  }
+}
+
+body {
+  background-color: var(--bs-tertiary-bg);
+}
+
+.dropdown-toggle.show {
+  outline: 0 !important;
+}
+
+.section {
+  padding: $spacer * 2 0;
+
+  &:nth-child(even) {
+    background-color: var(--bs-secondary-bg);
+    position: relative;
+    margin-top: calc(var(--d9-triangle-height) / 2);
+    margin-bottom: calc(var(--d9-triangle-height) / 2);
+
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      height: 0;
+    }
+
+    &::before {
+      top: calc(var(--d9-triangle-height) * -1);
+      border-top: var(--d9-triangle-height) solid transparent;
+      border-right: 100vw solid var(--bs-secondary-bg);
+    }
+
+    &::after {
+      bottom: calc(var(--d9-triangle-height) * -1);
+      border-bottom: var(--d9-triangle-height) solid transparent;
+      border-left: 100vw solid var(--bs-secondary-bg);
+    }
+  }
+
+  &:first-child {
+    h1, p {
+      margin-bottom: $spacer * 1.5;
+    }
+  }
+}
+
+@import "history";
+@import "navbar";

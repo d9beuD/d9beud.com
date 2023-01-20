@@ -46,17 +46,17 @@
   when: 2019 — 2021
   description: |
     Clôturant mes 5 années d'études à l'EPSI Montpellier, j'ai été diplômé d'un
-    Master Expert en informatique et Systèmes d'Information avec l'option Cyber 
+    Master Expert en informatique et Systèmes d'Information option Cyber 
     Sécurité.
   tags:
     - SCRUM
     - CI
 
-- name: Diplômé d'un Titre professionel CDI
+- name: Diplômé d'un Titre Professionel CDI
   when: 2018 — 2019
   description: |
     Mes capacités techniques, relationelles et de réflexion ont été évaluées 
-    dans le cadre de mon Titre professionel Concepteur Développeur Intégrateur.
+    dans le cadre de mon Titre Professionnel Concepteur Développeur Intégrateur.
   tags:
     - PHP
     - Java

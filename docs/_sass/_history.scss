@@ -89,3 +89,33 @@
   width: .25rem;
   background-color: var(--bs-body-color);
 }
+
+@include media-breakpoint-up(md) {
+  .history-head {
+    width: unset;
+    display: flex;
+    justify-content: center;
+  }
+
+  .history-item {
+    .history-item-space {
+      display: block !important;
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      text-align: end;
+      
+      ul {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  .history-footer {
+    width: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

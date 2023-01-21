@@ -32,16 +32,6 @@
     - PHP
     - TypeScript
 
-- name: Alternant
-  when: 2018 — 2021 (3 ans)
-  description: |
-    J'ai travaillé en contrat de professionnalisation chez AB+ SOFTWARE comme
-    développeur frontend sur un outil de cartographie du système d'information.
-  tags:
-    - C#
-    - JavaScript
-    - TypeScript
-
 - name: Diplômé d'un Master Ingénierie informatique
   when: 2019 — 2021
   description: |
@@ -51,6 +41,16 @@
   tags:
     - SCRUM
     - CI
+
+- name: Alternant
+  when: 2018 — 2021 (3 ans)
+  description: |
+    J'ai travaillé en contrat de professionnalisation chez AB+ SOFTWARE comme
+    développeur frontend sur un outil de cartographie du système d'information.
+  tags:
+    - C#
+    - JavaScript
+    - TypeScript
 
 - name: Diplômé d'un Titre Professionel CDI
   when: 2018 — 2019

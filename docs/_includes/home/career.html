@@ -19,11 +19,7 @@
         <small>{{ career.when }}</small>
         <h5 class="mb-0">{{ career.name }}</h5>
         {% if career.tags.size > 0 %}
-        <ul class="list-unstyled d-flex mb-1">
-          {% for tag in career.tags %}
-          <li class="badge bg-primary me-1">{{ tag }}</li>
-          {% endfor %}
-        </ul>
+          {% include home/tag_list.html tags=career.tags %}
         {% endif %}
         <p>{{ career.description }}</p>
       </div>

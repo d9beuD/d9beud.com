@@ -100,6 +100,11 @@ sass:
   accent: "#CC6699"
   thumbnail: /language/sass.png
 
+sql:
+  name: SQL
+  accent: "#027396"
+  thumbnail: /language/myesql.png
+
 swift:
   name: Swift
   accent: "#FB4126"

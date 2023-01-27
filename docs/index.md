@@ -17,3 +17,9 @@ title: "Accueil"
     {% include home/career.html %}
   </div>
 </section>
+
+<section id="mes-projets" class="section">
+  <div class="container">
+    <h2>Mes projets</h2>
+  </div>
+</section>

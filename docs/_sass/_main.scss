@@ -37,6 +37,10 @@ main {
 .section {
   padding: $spacer * 4 0;
 
+  +.section:not(.section-highlight) {
+    padding-top: 0;
+  }
+
   &.section-highlight {
     background-color: var(--bs-secondary-bg);
     position: relative;

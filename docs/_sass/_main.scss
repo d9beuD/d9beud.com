@@ -37,7 +37,7 @@ main {
 .section {
   padding: $spacer * 4 0;
 
-  +.section:not(.section-highlight) {
+  &:nth-child(2) {
     padding-top: 0;
   }
 

@@ -1,5 +1,6 @@
 - name: Développeur indépendant
   when: 2023 — Présent
+  icon: fa-code
   description: |
     En parallèle de mon entreprise, je souhaite également apporter ma pierre à 
     l'édifice de nombreux projets.
@@ -14,6 +15,7 @@
 
 - name: Intervenant — Jury de soutenance — Tuteur
   when: 2022 — Présent
+  icon: fa-person-chalkboard
   description: |
     Depuis la rentrée de septembre 2022, je forme les élèves de 1ère et 2ème 
     année de l'EPSI Montpellier sur les technologies du web et ai fait passer 
@@ -27,6 +29,7 @@
 
 - name: Directeur Général
   when: 2022 — Présent
+  icon: fa-user-tie
   description: |
     J'ai créé avec mon associé une SAS du nom de Codevia. L'objectif est de 
     fournir aux entreprises les services de nos meilleurs collaborateurs.
@@ -41,6 +44,7 @@
 
 - name: Diplômé d'un Master Ingénierie informatique
   when: 2019 — 2021
+  icon: fa-graduation-cap
   description: |
     Clôturant mes 5 années d'études à l'EPSI Montpellier, j'ai été diplômé d'un
     Master Expert en informatique et Systèmes d'Information option Cyber 
@@ -56,6 +60,7 @@
 
 - name: Alternant
   when: 2018 — 2021 (3 ans)
+  icon: fa-briefcase
   description: |
     J'ai travaillé en contrat de professionnalisation chez AB+ SOFTWARE comme
     développeur frontend sur un outil de cartographie du système d'information.
@@ -68,6 +73,7 @@
 
 - name: Diplômé d'un Titre Professionel CDI
   when: 2018 — 2019
+  icon: fa-graduation-cap
   description: |
     Mes capacités techniques, relationelles et de réflexion ont été évaluées 
     dans le cadre de mon Titre Professionnel Concepteur Développeur Intégrateur.
@@ -81,6 +87,7 @@
 
 - name: Diplômé d'un BTS
   when: 2016 — 2018
+  icon: fa-graduation-cap
   description: |
     Ce BTS SIO (Services Informatiques aux Organisations) option SLAM (Solutions 
     Logiciels et Applications Métiers — développeur) m'a permis d'améliorer mes 

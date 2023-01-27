@@ -110,6 +110,10 @@
         justify-content: end;
       }
     }
+
+    &:not(:first-child) {
+      margin-top: $spacer * -3;
+    }
   }
 
   .history-footer {

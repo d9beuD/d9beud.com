@@ -1,7 +1,9 @@
 <div class="row align-items-center justify-content-between">
   <div class="col-md-7 col-lg-6 order-2 order-md-first">
-    <h1>Développeur web full-stack</h1>
-    <p class="lead" markdown="1">
+    <h1 class="display-3 fw-bold">
+      Développeur web <span class="text-primary">full-stack</span>
+    </h1>
+    <p class="lead fw-bold" markdown="1">
       Après 5 ans d'études à l'école
       [EPSI Montpellier](https://www.epsi.fr/campus/campus-de-montpellier/){:target="_blank"}
       dont 3 en alternance, j'ai co-fondé mon entreprise

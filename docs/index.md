@@ -11,6 +11,7 @@ title: "Accueil"
 
 <section class="section">
   <div class="container">
+    <h2 class="mb-3">Mes compétences principales</h2>
     {% include home/skills.html %}
   </div>
 </section>

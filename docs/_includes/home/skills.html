@@ -1,19 +1,25 @@
 <div class="row justify-content-center">
-  {% for skill in site.data.my_skills %}
+  {% for myskill in site.data.my_skills %}
+  {% assign skill = site.data.skills[myskill.hash] %}
   <div class="col-md-6 col-lg-4 mb-3">
-    <div class="skill">
+    <div 
+      class="skill shadow" 
+      style="
+        box-shadow: .25rem .25rem {{ skill.accent }} !important
+      "
+    >
       <div class="row gx-3 h-100">
         <div class="col-auto skill-thumbnail">
           <img
             class="img-fluid"
-            src="{{ skill.thumbnail }}"
+            src="{{ site.img_skills_path}}{{ skill.thumbnail }}"
             alt="{{ skill.name }}"
           />
         </div>
 
         <div class="col">
-          <h5>{{ skill.name }}</h5>
-          <p>{{ skill.description }}</p>
+          <h5 class="fw-bold">{{ skill.name }}</h5>
+          <p>{{ myskill.description }}</p>
         </div>
       </div>
     </div>

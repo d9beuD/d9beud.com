@@ -14,7 +14,7 @@
 }
 
 .nav-separator {
-  border-right: $border-width solid var(--bs-border-color);
+  border-right: $border-width solid var(--bs-nav-link-color);
   margin-left: $spacer / 2;
   margin-right: $spacer / 2;
 }

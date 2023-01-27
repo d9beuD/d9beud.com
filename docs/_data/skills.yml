@@ -1,0 +1,193 @@
+# Frameworks
+angular:
+  name: Angular
+  accent: "#B42D31"
+  thumbnail: /framework/angular.png
+
+asp_net:
+  name: ASP.NET
+  accent: "#016FB1"
+  thumbnail: /framework/asp-net.png
+
+blazor:
+  name: Blazor
+  accent: "#5C2C91"
+  thumbnail: /framework/blazor.png
+
+electron:
+  name: Electron
+  accent: "#2A2E3A"
+  thumbnail: /framework/electron.png
+
+flutter:
+  name: Flutter
+  accent: "#00559E"
+  thumbnail: /framework/flutter.png
+
+react:
+  name: React
+  accent: "#61DAFB"
+  thumbnail: /framework/react.png
+
+svelte:
+  name: Svelte
+  accent: "#FF3E00"
+  thumbnail: /framework/svelte.png
+
+symfony:
+  name: Symfony
+  accent: "#000000"
+  thumbnail: /framework/symfony.png
+
+vue:
+  name: Vue.js
+  accent: "#4FC08D"
+  thumbnail: /framework/vue.png
+
+# Languages
+c:
+  name: C
+  accent: "#283593"
+  thumbnail: /language/c.png
+
+c_sharp:
+  name: C#
+  accent: "#6A1677"
+  thumbnail: /language/c-sharp.png
+
+css:
+  name: CSS
+  accent: "#1572B6"
+  thumbnail: /language/css.png
+
+dart:
+  name: Dart
+  accent: "#0175C2"
+  thumbnail: /language/dart.png
+
+html:
+  name: HTML
+  accent: "#E34F26"
+  thumbnail: /language/html.png
+
+java:
+  name: Java
+  accent: "#007396"
+  thumbnail: /language/java.png
+
+javascript:
+  name: JavaScript
+  accent: "#F7DF1E"
+  thumbnail: /language/javascript.png
+
+php:
+  name: PHP
+  accent: "#777BB4"
+  thumbnail: /language/php.png
+
+python:
+  name: Python
+  accent: "#3776AB"
+  thumbnail: /language/python.png
+
+rust:
+  name: Rust
+  accent: "#000000"
+  thumbnail: /language/rust.png
+
+sass:
+  name: Sass
+  accent: "#CC6699"
+  thumbnail: /language/sass.png
+
+swift:
+  name: Swift
+  accent: "#FB4126"
+  thumbnail: /language/swift.png
+
+typescript:
+  name: TypeScript
+  accent: "#3178C6"
+  thumbnail: /language/typescript.png
+
+# OS
+linux:
+  name: Linux
+  accent: "#FCC624"
+  thumbnail: /os/linux.png
+
+macos:
+  name: macOS
+  accent: "#0794F9"
+  thumbnail: /os/macos.png
+
+windows:
+  name: Windows
+  accent: "#0078D6"
+  thumbnail: /os/windows.png
+
+# Tools
+# git:
+#   name: Git
+#   accent: "#F05032"
+#   thumbnail: /tool/git.png
+
+android_studio:
+  name: Android Studio
+  accent: "#87BA52"
+  thumbnail: /tool/android-studio.png
+
+apple_keynote:
+  name: Apple Keynote
+  accent: "#1967EF"
+  thumbnail: /tool/apple-keynote.png
+
+apple_numbers:
+  name: Apple Numbers
+  accent: "#18D41E"
+  thumbnail: /tool/apple-numbers.png
+
+apple_pages:
+  name: Apple Pages
+  accent: "#FB8616"
+  thumbnail: /tool/apple-pages.png
+
+figma:
+  name: Figma
+  accent: "#F24E1E"
+  thumbnail: /tool/figma.png
+
+ms_access:
+  name: Microsoft Access
+  accent: "#A4373A"
+  thumbnail: /tool/ms-access.png
+
+ms_excel:
+  name: Microsoft Excel
+  accent: "#217346"
+  thumbnail: /tool/ms-excel.png
+
+ms_powerpoint:
+  name: Microsoft PowerPoint
+  accent: "#B7472A"
+  thumbnail: /tool/ms-powerpoint.png
+
+ms_word:
+  name: Microsoft Word
+  accent: "#2B579A"
+  thumbnail: /tool/ms-word.png
+
+visual_studio:
+  name: Visual Studio
+  accent: "#5C2D91"
+  thumbnail: /tool/visual-studio.png
+
+vscode:
+  name: Visual Studio Code
+  accent: "#007ACC"
+  thumbnail: /tool/vscode.png
+
+xcode:
+  name: Xcode
+  accent: "#1575F9"
+  thumbnail: /tool/xcode.png

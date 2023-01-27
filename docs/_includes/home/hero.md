@@ -3,9 +3,9 @@
     <h1>Développeur web full-stack</h1>
     <p class="lead" markdown="1">
       Après 5 ans d'études à l'école
-      [EPSI Montpellier](https://www.epsi.fr/campus/campus-de-montpellier/)
+      [EPSI Montpellier](https://www.epsi.fr/campus/campus-de-montpellier/){:target="_blank"}
       dont 3 en alternance, j'ai co-fondé mon entreprise
-      [Codevia](https://codevia.io). En parallèle,
+      [Codevia](https://codevia.io){:target="_blank"}. En parallèle,
       j'ai lancé mon activité de développeur web freelance.
     </p>
     <div>

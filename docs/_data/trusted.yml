@@ -1,0 +1,15 @@
+- name: AB+ SOFTWARE
+  project: Logiciel de cartographie du système d'information.
+  thumbnail: /abplus.jpeg
+  link: https://abplussoftware.fr
+
+- name: CDI Neuf
+  project: |
+    Application de suivi des contacts et de leurs préférences d'investissement.
+  thumbnail: /cdi-neuf.jpg
+  link: https://www.cdi-neuf.fr/fr
+
+- name: AKWEL — MGI Coutier
+  project: Application de gestion de la production assistée par ordinateur.
+  thumbnail: /akwel.jpeg
+  link: https://akwel-automotive.com

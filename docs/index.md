@@ -18,15 +18,14 @@ title: "Accueil"
 
 <section id="mon-parcours" class="section section-highlight">
   <div class="container">
-    <h2>Mon parcours</h2>
+    <h2>Mon parcours, mon <span class="text-primary">expertise</span>.</h2>
     {% include home/career.html %}
   </div>
 </section>
 
-<!--
-<section id="mes-projets" class="section">
+<section id="confiance" class="section">
   <div class="container">
-    <h2>Mes projets</h2>
+    <h2 class="mb-3">Ils m'ont fait <span class="text-primary">confiance</span>. Qu'attendez-vous ?</h2>
+    {% include home/trusted.html %}
   </div>
 </section>
--->

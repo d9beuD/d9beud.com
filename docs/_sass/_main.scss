@@ -88,6 +88,15 @@ main {
   border-top: $border-width solid var(--bs-border-color);
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+
+  .card-buttons {
+    margin-top: auto;
+  }
+}
+
 @import "history";
 @import "navbar";
 @import "skill";

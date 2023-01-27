@@ -15,9 +15,9 @@
         <i class="fa-solid fa-arrow-right-long"></i>
         Mon parcours
       </a>
-      <a class="btn btn-primary mb-1" href="#mes-projets">
-        <i class="fa-solid fa-rectangle-vertical-history"></i>
-        Mes projets
+      <a class="btn btn-primary mb-1" href="#confiance">
+        <i class="fa-solid fa-badge-check"></i>
+        Ils m'ont fait confiance
       </a>
     </div>
 

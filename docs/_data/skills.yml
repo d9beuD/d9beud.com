@@ -77,7 +77,7 @@ java:
 
 javascript:
   name: JavaScript
-  accent: "#F7DF1E"
+  accent: "#D6BE00"
   thumbnail: /language/javascript.png
 
 php:

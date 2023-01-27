@@ -3,7 +3,10 @@ url: "https://d9beud.com"
 baseurl: ""
 title: "Vincent Bathelier"
 
-markdown: GFM
+markdown: kramdown
+
+kramdown:
+  input: GFM
 
 plugins:
   - jekyll-feed

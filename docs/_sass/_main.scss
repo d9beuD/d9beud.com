@@ -37,7 +37,7 @@ main {
 .section {
   padding: $spacer * 4 0;
 
-  &:nth-child(even) {
+  &.section-highlight {
     background-color: var(--bs-secondary-bg);
     position: relative;
     margin-top: var(--d9-triangle-height);
@@ -86,3 +86,4 @@ main {
 
 @import "history";
 @import "navbar";
+@import "skill";

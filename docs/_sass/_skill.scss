@@ -1,0 +1,16 @@
+.skill {
+  background-color: var(--bs-secondary-bg);
+  padding: $spacer;
+  border-radius: $border-radius * 2;
+  height: 100%;
+
+  .skill-thumbnail {
+    width: 4rem;
+    margin-bottom: $spacer / 2;
+    align-self: center;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

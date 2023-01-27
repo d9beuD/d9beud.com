@@ -20,6 +20,13 @@ twitter:
 
 social:
   github: https://github.com/d9beuD
+  linkedin: 
+    href: https://www.linkedin.com/in/vincent-bathelier/
+    color: "#0077B5"
+  malt: 
+    href: https://www.malt.fr/profile/vincentbathelier
+    color: "#FC5757"
+    icon: fa-transporter
 
 description: |
   Après 5 ans d’études à EPSI Montpellier dont 3 en alternance, j’ai co-fondé

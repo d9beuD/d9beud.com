@@ -6,8 +6,8 @@
   tags:
     - Prospection
     - Contact
-    - PHP
-    - TypeScript
+    - php
+    - typescript
 
 - name: Intervenant — Jury de soutenance — Tuteur
   when: 2022 — Présent
@@ -17,10 +17,10 @@
     des soutenances en tant que jury. De plus, j'aide des élèves de 5ème année à
     organiser leur dossier professionel dans le cadre d'un tutorat.
   tags:
-    - PHP
-    - Symfony
-    - HTML
-    - CSS
+    - php
+    - symfony
+    - html
+    - css
 
 - name: Directeur Général
   when: 2022 — Présent
@@ -30,8 +30,10 @@
   tags:
     - Gestion
     - Prospection
-    - PHP
-    - TypeScript
+    - php
+    - typescript
+    - vue
+    - sass
 
 - name: Diplômé d'un Master Ingénierie informatique
   when: 2019 — 2021
@@ -42,6 +44,11 @@
   tags:
     - SCRUM
     - CI
+    - php
+    - typescript
+    - electron
+    - vue
+    - sass
 
 - name: Alternant
   when: 2018 — 2021 (3 ans)
@@ -49,9 +56,11 @@
     J'ai travaillé en contrat de professionnalisation chez AB+ SOFTWARE comme
     développeur frontend sur un outil de cartographie du système d'information.
   tags:
-    - C#
-    - JavaScript
-    - TypeScript
+    - c_sharp
+    - javascript
+    - typescript
+    - vue
+    - sass
 
 - name: Diplômé d'un Titre Professionel CDI
   when: 2018 — 2019
@@ -59,8 +68,9 @@
     Mes capacités techniques, relationelles et de réflexion ont été évaluées 
     dans le cadre de mon Titre Professionnel Concepteur Développeur Intégrateur.
   tags:
-    - PHP
-    - Java
+    - php
+    - sql
+    - java
 
 - name: Diplômé d'un BTS
   when: 2016 — 2018
@@ -69,8 +79,10 @@
     Logiciels et Applications Métiers — développeur) m'a permis d'améliorer mes 
     compétences techniques.
   tags:
-    - PHP
-    - JavaScript
-    - CSS
-    - SQL
-    - C#
+    - php
+    - symfony
+    - javascript
+    - css
+    - html
+    - sql
+    - c_sharp

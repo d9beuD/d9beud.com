@@ -1,5 +1,11 @@
 .navbar {
-  background-color: var(--bs-body-bg);
+  background-color: $white;
+}
+
+@include color-mode(dark) {
+  .navbar, .footer {
+    background-color: $dark;
+  }
 }
 
 .navbar-brand {

@@ -84,6 +84,58 @@ main {
   }
 }
 
+.img-hero {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: -.5rem 1rem 0 .5rem var(--bs-primary);
+  transition: all .3s ease-in-out;
+  animation: hero-border-radius ease-in-out 10s infinite,
+    hero-transform ease-in-out 4s infinite;
+}
+
+@keyframes hero-border-radius {
+  from {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+
+  30% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+
+  35% {
+    border-radius: 30% 70% 44% 56% / 64% 57% 43% 36%;
+  }
+
+  60% {
+    border-radius: 30% 70% 44% 56% / 64% 57% 43% 36%;
+  }
+
+  65% {
+    border-radius: 76% 24% 15% 85% / 75% 30% 70% 25%;
+  }
+
+  95% {
+    border-radius: 76% 24% 15% 85% / 75% 30% 70% 25%;
+  }
+
+  to {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+
+@keyframes hero-transform {
+  from {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(.6rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
 .footer {
   padding: $spacer 0;
   border-top: $border-width solid var(--bs-border-color);

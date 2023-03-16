@@ -1,5 +1,5 @@
-<div class="row align-items-center justify-content-between">
-  <div class="col-md-7 col-lg-6 order-2 order-md-first">
+<div class="row align-items-center justify-content-center">
+  <div class="col-md-7 col-lg-8 order-2 order-md-first">
     <h1 class="display-3 fw-bold">
       Développeur web <span class="text-primary">full-stack</span>
     </h1>
@@ -23,11 +23,11 @@
 
   </div>
 
-  <div class="col">
+  <div class="col-8 col-md-5 col-lg-4 mb-5 mb-md-0">
     <img
-      class="img-fluid mb-3"
-      src="/assets/images/home/mbp16-spacegray-hero.webp"
-      alt="Illustration d'un MacBook Pro 16 pouces"
+      class="img-fluid mb-3 img-hero"
+      src="/assets/images/home/me.jpeg"
+      alt="Photo de profil de Vincent Bathelier"
     />
   </div>
 </div>

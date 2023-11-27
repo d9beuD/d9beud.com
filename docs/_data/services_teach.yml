@@ -1,0 +1,13 @@
+- name: Langages HTML/CSS
+  description: |
+    Introduction au développement web avec les langages à l'origine de toutes
+    les pages web.
+  icon: fa-brands fa-html5
+  skill: html
+
+- name: Framework Symfony
+  description: |
+    Approfondissement du langage PHP avec du développement orienté 
+    objet et une architecture robuste et extensible.
+  icon: fa-brands fa-symfony
+  skill: symfony

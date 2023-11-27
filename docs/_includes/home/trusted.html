@@ -1,4 +1,30 @@
-<div class="row g-2 justify-content-around mb-5">
+<div class="row gap-2 justify-content-center">
+  <div class="col-auto">
+    <a
+      href="{{ site.social.linkedin.href }}"
+      target="_blank"
+      class="btn btn-lg text-white"
+      style="background-color: {{ site.social.linkedin.color }};">
+      <i class="fa-brands fa-linkedin"></i>
+      Connectons-nous
+    </a>
+  </div>
+  <div class="col-auto d-flex align-items-center">
+    <span>OU</span>
+  </div>
+  <div class="col-auto">
+    <a
+      href="{{ site.social.malt.href }}"
+      class="btn btn-lg text-white"
+      target="_blank"
+      style="background-color: {{ site.social.malt.color }};">
+      <i class="fa-solid {{ site.social.malt.icon }}"></i>
+      Commandez-moi sur Malt
+    </a>
+  </div>
+</div>
+
+<div class="row g-2 justify-content-around my-5">
   {% for company in site.data.trusted %}
     <div class="col-8 col-sm-6 col-md-4 col-lg-4 col-xl-3">
       <div class="card h-100">
@@ -26,30 +52,4 @@
       </div>
     </div>
   {% endfor %}
-</div>
-
-<div class="row gap-2 justify-content-center">
-  <div class="col-auto">
-    <a
-      href="{{ site.social.linkedin.href }}"
-      target="_blank"
-      class="btn btn-lg text-white"
-      style="background-color: {{ site.social.linkedin.color }};">
-      <i class="fa-brands fa-linkedin"></i>
-      Connectons-nous
-    </a>
-  </div>
-  <div class="col-auto d-flex align-items-center">
-    <span>OU</span>
-  </div>
-  <div class="col-auto">
-    <a
-      href="{{ site.social.malt.href }}"
-      class="btn btn-lg text-white"
-      target="_blank"
-      style="background-color: {{ site.social.malt.color }};">
-      <i class="fa-solid {{ site.social.malt.icon }}"></i>
-      Commandez-moi sur Malt
-    </a>
-  </div>
 </div>

@@ -1,3 +1,8 @@
+- name: EPSI Montpellier
+  project: Introduction des elèves de l'EPSI au développement web.
+  thumbnail: /epsi.jpg
+  link: https://www.epsi.fr/campus/campus-de-montpellier/
+
 - name: AB+ SOFTWARE
   project: Logiciel de cartographie du système d'information.
   thumbnail: /abplus.jpeg

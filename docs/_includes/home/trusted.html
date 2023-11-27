@@ -1,39 +1,40 @@
-<div class="row gap-2 justify-content-around mb-5">
+<div class="row g-2 justify-content-around mb-5">
   {% for company in site.data.trusted %}
-  <div class="col-8 col-md-5 col-lg-3">
-    <div class="card h-100">
-      <img 
-        src="{{ site.img_companies_path }}{{ company.thumbnail }}" 
-        alt="{{ company.name }} logo" 
-        class="card-img-top"
-      >
-      <div class="card-body">
-        <h5 class="card-title">
-          {{ company.name }}
-        </h5>
-        <p class="card-text">
-          {{ company.project }}
-        </p>
-        <div class="card-buttons">
-          <a class="btn btn-primary" href="{{ company.link }}" target="_blank">
-            Visiter
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
+    <div class="col-8 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img
+          src="{{ site.img_companies_path }}{{ company.thumbnail }}"
+          alt="{{ company.name }} logo"
+          class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">
+            {{ company.name }}
+          </h5>
+          <p class="card-text">
+            {{ company.project }}
+          </p>
+          <div class="card-buttons">
+            <a
+              class="btn btn-primary"
+              href="{{ company.link }}"
+              target="_blank">
+              Visiter
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   {% endfor %}
 </div>
 
 <div class="row gap-2 justify-content-center">
   <div class="col-auto">
-    <a 
-      href="{{ site.social.linkedin.href }}" 
+    <a
+      href="{{ site.social.linkedin.href }}"
       target="_blank"
-      class="btn btn-lg text-white" 
-      style="background-color: {{ site.social.linkedin.color }};"
-    >
+      class="btn btn-lg text-white"
+      style="background-color: {{ site.social.linkedin.color }};">
       <i class="fa-brands fa-linkedin"></i>
       Connectons-nous
     </a>
@@ -42,12 +43,11 @@
     <span>OU</span>
   </div>
   <div class="col-auto">
-    <a 
-      href="{{ site.social.malt.href }}" 
-      class="btn btn-lg text-white" 
-      target="_blank" 
-      style="background-color: {{ site.social.malt.color }};"
-    >
+    <a
+      href="{{ site.social.malt.href }}"
+      class="btn btn-lg text-white"
+      target="_blank"
+      style="background-color: {{ site.social.malt.color }};">
       <i class="fa-solid {{ site.social.malt.icon }}"></i>
       Commandez-moi sur Malt
     </a>

@@ -1,0 +1,24 @@
+- name: Langage PHP
+  description: Développement et mise à jour de tout type de projet PHP.
+  icon: fa-brands fa-php
+  skill: php
+
+- name: Framework Symfony
+  description: Développement et mise à jour des applications Symfony.
+  icon: fa-brands fa-symfony
+  skill: symfony
+
+- name: Framework Vue.js
+  description: Développement frontend réactif et performant.
+  icon: fa-brands fa-vuejs
+  skill: vue
+
+- name: Framework Electron
+  description: Développement d'applications desktop multiplateformes.
+  icon: fa-light fa-atom
+  skill: electron
+
+- name: Documentation technique
+  description: Création de sites statiques pour la documentation technique, générés en intégration continue.
+  icon: fa-brands fa-github
+  skill: symfony

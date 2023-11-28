@@ -16,7 +16,7 @@ blazor:
 
 electron:
   name: Electron
-  accent: "#2A2E3A"
+  accent: "#028399"
   thumbnail: /framework/electron.png
 
 flutter:

@@ -1,12 +1,12 @@
 {% assign service = include.service %}
 
 <div 
-  class="skill h-100" 
+  class="skill" 
   style="
-    box-shadow: .25rem .25rem {{ site.data.skills[service.skill].accent }} !important
+    --skill-accent-color: {{ site.data.skills[service.skill].accent }};
   "
 >
-  <div class="card-body">
+  <div class="skill-body">
     <div class="display-2" style="color: {{ site.data.skills[service.skill].accent }};">
       <i class="{{ service.icon }}"></i>
     </div>

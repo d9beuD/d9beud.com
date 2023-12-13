@@ -1,6 +1,6 @@
 - name: Hébergement web
   description: |
-    Je m'occupe de l'hébergement de votre site, de sa publication sur Internet
-    et de son certificat SSL pour un accès en HTTPS.
+    Hébergement de votre site, publication sur Internet et certificat SSL pour 
+    un accès en HTTPS.
   icon: fa-solid fa-browser
   skill: typescript

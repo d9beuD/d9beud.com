@@ -3,23 +3,25 @@
   {% assign skill = site.data.skills[myskill.hash] %}
   <div class="col-md-6 col-lg-4 mb-3">
     <div 
-      class="skill shadow" 
+      class="skill" 
       style="
-        box-shadow: .25rem .25rem {{ skill.accent }} !important
+        --skill-accent-color: {{ skill.accent }};
       "
     >
-      <div class="row gx-3 h-100">
-        <div class="col-auto skill-thumbnail">
-          <img
-            class="img-fluid"
-            src="{{ site.img_skills_path}}{{ skill.thumbnail }}"
-            alt="{{ skill.name }}"
-          />
-        </div>
-
-        <div class="col">
-          <h5 class="fw-bold">{{ skill.name }}</h5>
-          <p>{{ myskill.description }}</p>
+      <div class="skill-body">
+        <div class="row gx-3 h-100">
+          <div class="col-auto skill-thumbnail">
+            <img
+              class="img-fluid"
+              src="{{ site.img_skills_path}}{{ skill.thumbnail }}"
+              alt="{{ skill.name }}"
+            />
+          </div>
+  
+          <div class="col">
+            <h5 class="fw-bold">{{ skill.name }}</h5>
+            <p>{{ myskill.description }}</p>
+          </div>
         </div>
       </div>
     </div>

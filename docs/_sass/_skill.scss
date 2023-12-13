@@ -1,8 +1,36 @@
+@property --skill-gradient-deg {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 20deg;
+}
+
 .skill {
-  background-color: var(--bs-secondary-bg);
-  padding: $spacer;
+  --skill-accent-color: #000;
+
+  background-color: var(--skill-accent-color);
+  box-shadow: .25rem .25rem var(--skill-accent-color);
   border-radius: $border-radius * 2;
   height: 100%;
+  overflow: hidden;
+  
+  &:hover .skill-body {
+    --skill-gradient-deg: 200deg;
+  }
+
+  .skill-body {
+    --skill-gradient-deg: 340deg;
+    background-image:
+      linear-gradient(
+        var(--skill-gradient-deg),
+        var(--skill-accent-color) -50%,
+        var(--bs-secondary-bg) 40%
+      );
+    padding: $spacer;
+    height: 100%;
+    border-radius: $border-radius * 2;
+    border-top-left-radius: 0;
+    transition: --skill-gradient-deg .3s ease-in-out;
+  }
 
   .skill-thumbnail {
     width: 4rem;

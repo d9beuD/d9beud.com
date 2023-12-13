@@ -1,0 +1,29 @@
+.card-trusted {
+  --bg-url: #{url('/')};
+  --blur-amount: #{$spacer * 3};
+  
+  .card-body > * {
+    z-index: 2;
+  }
+
+  .card-body {
+    overflow: hidden;
+  }
+
+  .trusted-background {
+    background: linear-gradient(
+      rgba(255, 255, 255, .3) -10%,
+      var(--bs-card-bg) 80%
+    ), var(--bg-url);
+    background-position: center;
+    background-size: cover;
+    filter: blur(var(--blur-amount));
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1 !important;
+  }
+}

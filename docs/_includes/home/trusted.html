@@ -27,12 +27,16 @@
 <div class="row g-2 justify-content-around my-5">
   {% for company in site.data.trusted %}
     <div class="col-8 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-      <div class="card h-100">
+      <div 
+        class="card card-trusted h-100" 
+        style="--bg-url: url('{{ site.img_companies_path }}{{ company.thumbnail }}');"
+      >
         <img
           src="{{ site.img_companies_path }}{{ company.thumbnail }}"
           alt="{{ company.name }} logo"
           class="card-img-top">
-        <div class="card-body">
+        <div class="card-body position-relative">
+          <div class="trusted-background"></div>
           <h5 class="card-title">
             {{ company.name }}
           </h5>

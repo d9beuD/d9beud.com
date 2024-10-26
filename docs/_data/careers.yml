@@ -28,7 +28,7 @@
     - css
 
 - name: Directeur Général
-  when: 2022 — Présent
+  when: 2022 — 2024
   icon: fa-user-tie
   description: |
     J'ai créé avec mon associé une SAS du nom de Codevia. L'objectif est de 

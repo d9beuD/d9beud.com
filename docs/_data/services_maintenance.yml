@@ -1,6 +1,0 @@
-- name: Hébergement web
-  description: |
-    Hébergement de votre site, publication sur Internet et certificat SSL pour 
-    un accès en HTTPS.
-  icon: fa-solid fa-browser
-  skill: typescript

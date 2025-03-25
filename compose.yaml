@@ -3,7 +3,7 @@ name: d9beud
 services:
   ###> doctrine/doctrine-bundle ###
   database:
-    image: bitnami/mariadb:10.6.21
+    image: bitnami/mariadb:10.6.20
     container_name: d9beud-database
     environment:
       - MARIADB_ROOT_PASSWORD=${MARIADB_ROOT_PASSWORD:-root_password}

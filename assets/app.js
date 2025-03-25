@@ -7,3 +7,4 @@ import './bootstrap.js';
  */
 import './styles/app.scss';
 import './fontawesome-kit/css/all.min.css';
+import './vendor/bootstrap/dist/js/bootstrap.bundle.min.js';

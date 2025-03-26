@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Vincent BATHELIER | Portfolio{% endblock %}
+{% block title %}Développeur Web Freelance{% endblock %}
 {% block description %}
 Après 5 ans d’études à l’école EPSI Montpellier dont 3 en alternance, 
 j’ai co-fondé mon entreprise Codevia. En parallèle, 
@@ -23,7 +23,7 @@ j’ai lancé mon activité de développeur web freelance.
 
         <div class="row g-2 justify-content-md-center">
           <div class="col-auto">
-            <twig:Button href="#" icon>
+            <twig:Button href="{{ path('app_home_applications') }}" icon>
               <span>Mes applications</span>
               <twig:Icon name="arrow-right-long" />
             </twig:Button>

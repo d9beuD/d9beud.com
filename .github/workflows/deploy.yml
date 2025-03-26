@@ -100,4 +100,4 @@ jobs:
           REMOTE_HOST: ${{ secrets.O2SWITCH_HOST }}
           REMOTE_USER: ${{ secrets.O2SWITCH_USER }}
           TARGET: ${{ secrets.APP_PATH }}/
-          EXCLUDE: ".git*, public/assets/upload/*"
+          EXCLUDE: ".git*"

@@ -71,12 +71,20 @@ $utilities: map-merge(
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../../vendor/twbs/bootstrap/scss/utilities/api";
 
+main {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
 .bg-gradient-to-bottom {
   background: linear-gradient(180deg, var(--bs-tertiary-bg) 10%, transparent 90%);
 }
 
 .bg-grid {
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(233 236 239 / 1)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  background: 
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(233 236 239 / 1)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e"),
+    var(--bs-body-bg);
   background-position: bottom 1px center;
 }
 
@@ -110,5 +118,19 @@ $utilities: map-merge(
   & svg {
     width: auto !important;
     height: 100% !important;
+  }
+}
+
+.img-client {
+  height: calc($spacer * 14);
+  width: auto;
+}
+
+.link-image {
+  transition: all .3s;
+  opacity: 1;
+
+  &:hover {
+    opacity: .7;
   }
 }

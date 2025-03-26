@@ -1,3 +1,3 @@
 <li {{ attributes.defaults({ class: 'nav-item'}) }}>
-  <a href="{{ href }}" class="nav-link">{% block content %}{% endblock %}</a>
+  <a href="{{ href }}" class="{{ navLinkClasses|join(' ') }}">{% block content %}{% endblock %}</a>
 </li>

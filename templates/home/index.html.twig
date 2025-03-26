@@ -8,7 +8,7 @@ j’ai lancé mon activité de développeur web freelance.
 {% endblock %}
 
 {% block body %}
-<section class="bg-grid">
+<section class="bg-grid position-relative">
   <div class="bg-gradient-to-bottom pb-8 pt-4 pt-sm-6 pt-lg-8">
     <div class="container">
       <div class="mx-auto w-md-75 flex flex-column text-md-center">
@@ -36,10 +36,10 @@ j’ai lancé mon activité de développeur web freelance.
 
 <section class="bg-body-tertiary pt-5 pb-6">
   <div class="container">
-    <div class="row justify-content-around align-items-center gy-5">
-      <div class="col-auto" style="max-width: min(20rem, 100%);">
-        <div class="card mt-n7 border-0 rounded-3 shadow-sm overflow-hidden">
-        <img src="{{ asset('images/me.webp') }}" alt="Photo de profil de Vincent Bathelier" class="card-img-top h-auto" width="720" height="720">
+    <div class="row justify-content-around gy-5">
+      <div class="col-auto mb-md-n7" style="max-width: min(20rem, 100%);">
+        <div class="card h-md-100 mt-n7 mb-md-n7 border-0 rounded-3 shadow-sm overflow-hidden">
+          <img src="{{ asset('images/me.webp') }}" alt="Photo de profil de Vincent Bathelier" class="card-img-top h-auto" width="720" height="720">
           <div class="card-body">
             <h2 class="card-title h4 fw-bold">Vincent BATHELIER</h2>
             
@@ -58,7 +58,7 @@ j’ai lancé mon activité de développeur web freelance.
         </div>
       </div>
       
-      <div class="col-12 col-md col-lg-6">
+      <div class="col-12 col-md col-lg-6 align-self-center">
         <div class="d-inline-block rounded-4 p-3 bg-warning text-warning display-5 mb-3" style="--bs-bg-opacity: 0.1">
           <twig:Icon name="signs-post" fixedWidth />
         </div>
@@ -213,46 +213,70 @@ j’ai lancé mon activité de développeur web freelance.
       <twig:Icon name="ellipsis" fixedWidth />
       <twig:Icon name="handshake-simple" fixedWidth />
     </div>
+    
     <h2 class="display-5 fw-semibold mb-3">Ils me font confiance. Et vous ?</h2>
 
-    <div class="row justify-content-around align-items-end gy-5">
-      <div class="col-auto">
+    <div class="row mb-3">
+      <div class="col-lg-7">
+        <p class="lead">
+          La collaboration avec des entreprises exigeantes m’a permis de relever des défis stimulants et de concevoir
+          des solutions personnalisées, adaptées à leurs besoins spécifiques. Ces clients me font confiance en raison
+          de mon expertise et de mon engagement à livrer des projets de qualité. Pourquoi ne pas vous joindre à eux ?
+          Donnons vie ensemble à vos idées !
+        </p>
+      </div>
+    </div>
+
+    <div class="row align-items-end gy-5">
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
         <div class="text-center lead mb-2">
           <div class="fw-bold">Votre entreprise ?</div>
           <twig:Icon name="hand-back-point-down" size="xl" class="text-warning" />
         </div>
-        <div class="ratio ratio-1x1" style="width: 14rem;">
+        <div class="ratio ratio-1x1 w-100">
           <div class="border rounded-5 d-flex justify-content-center align-items-center" style="
             --bs-border-style: dashed;
             --bs-border-width: 6px;
             --fa-animation-duration: 2s;
           ">
-            <twig:Icon name="block-question" class="display-4 fa-fade" />
+            <twig:Icon name="block-question" class="display-4 fa-fade text-primary" />
           </div>
         </div>
       </div>
+      
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+        <a class="link-image" href="https://www.purplegiraffe.fr" target="_blank" aria-label="Aller sur le site de Purple Giraffe">
+          <img src="{{ asset('images/companies/purple-giraffe.webp') }}" alt="Purple Giraffe" width="448" height="448" class="img-fluid rounded-5 shadow-sm">
+        </a>
+      </div>
+      
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+        <a class="link-image" href="https://www.vegace.fr" target="_blank" aria-label="Aller sur le site de VegaCE">
+          <img src="{{ asset('images/companies/vegace.webp') }}" alt="VegaCE" width="448" height="448" class="img-fluid rounded-5 shadow-sm">
+        </a>
+      </div>
 
-      <div class="col-auto">
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
         <a class="link-image" href="https://www.epsi.fr/campus/montpellier" target="_blank" aria-label="Aller sur le site de EPSI Montpellier">
-          <img src="{{ asset('images/companies/epsi.webp') }}" alt="EPSI Montpellier" width="200" height="200" class="img-client rounded-5 shadow-sm">
+          <img src="{{ asset('images/companies/epsi.webp') }}" alt="EPSI Montpellier" width="448" height="448" class="img-fluid rounded-5 shadow-sm">
         </a>
       </div>
       
-      <div class="col-auto">
-        <a class="link-image" href="https://my-carto.com" target="_blank" aria-label="Aller sur le site de AB+ Software">
-          <img src="{{ asset('images/companies/abplus.webp') }}" alt="AB+ Software" width="200" height="200" class="img-client rounded-5 shadow-sm">
-        </a>
-      </div>
-      
-      <div class="col-auto">
-        <a class="link-image" href="https://www.cdi-neuf.fr" target="_blank" aria-label="Aller sur le site de CDI Neuf">
-          <img src="{{ asset('images/companies/cdi-neuf.webp') }}" alt="CDI Neuf" width="200" height="200" class="img-client rounded-5 shadow-sm">
-        </a>
-      </div>
-      
-      <div class="col-auto">
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
         <a class="link-image" href="https://ifip.asso.fr" target="_blank" aria-label="Aller sur le site de IFIP">
-          <img src="{{ asset('images/companies/ifip.webp') }}" alt="IFIP" width="200" height="200" class="img-client rounded-5 shadow-sm">
+          <img src="{{ asset('images/companies/ifip.webp') }}" alt="IFIP" width="448" height="448" class="img-fluid rounded-5 shadow-sm">
+        </a>
+      </div>
+      
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+        <a class="link-image" href="https://my-carto.com" target="_blank" aria-label="Aller sur le site de AB+ Software">
+          <img src="{{ asset('images/companies/abplus.webp') }}" alt="AB+ Software" width="448" height="448" class="img-fluid rounded-5 shadow-sm">
+        </a>
+      </div>
+      
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+        <a class="link-image" href="https://www.cdi-neuf.fr" target="_blank" aria-label="Aller sur le site de CDI Neuf">
+          <img src="{{ asset('images/companies/cdi-neuf.webp') }}" alt="CDI Neuf" width="448" height="448" class="img-fluid rounded-5 shadow-sm">
         </a>
       </div>
     </div>
@@ -261,8 +285,8 @@ j’ai lancé mon activité de développeur web freelance.
 
 <section class="bg-body py-8">
   <div class="container">
-    <div class="flex text-success display-5 mb-3">
-      <div class="d-inline-block rounded-4 p-3 bg-success" style="--bs-bg-opacity: 0.1">
+    <div class="flex text-secondary display-5 mb-3">
+      <div class="d-inline-block rounded-4 p-3 bg-secondary" style="--bs-bg-opacity: 0.1">
         <twig:Icon name="lock-keyhole-open" fixedWidth />
       </div>
 

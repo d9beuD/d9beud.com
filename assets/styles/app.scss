@@ -32,6 +32,12 @@ $utilities: map-merge(
         responsive: true,
       )
     )
+  ), (
+    "height": map-merge(
+      map-get($utilities, "height"), (
+        responsive: true,
+      )
+    )
   )
 );
 
@@ -119,11 +125,6 @@ main {
     width: auto !important;
     height: 100% !important;
   }
-}
-
-.img-client {
-  height: calc($spacer * 14);
-  width: auto;
 }
 
 .link-image {

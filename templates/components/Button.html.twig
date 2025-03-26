@@ -1,0 +1,33 @@
+{% set button = html_cva(
+  base: 'btn',
+  variants: {
+    variant: {
+      primary: 'btn-primary',
+      secondary: 'btn-secondary',
+      danger: 'btn-danger',
+    },
+    size: {
+      sm: 'btn-sm',
+      md: null,
+      lg: 'btn-lg',
+    },
+    rounded: {
+      '0': 'rounded-0',
+      '1': 'rounded-1',
+      '2': 'rounded-2',
+      '3': 'rounded-3',
+      '4': 'rounded-4',
+      '5': 'rounded-5',
+    }
+  },
+  defaultVariant: {
+    rounded: '3',
+  },
+) %}
+<{{ tag }} 
+  class="{{ button.apply({variant: variant, size}, attributes.render('class'), icon ? 'd-flex space-x-2 align-items-center') }}" 
+  {% if tag is same as('a') %}
+    href="{{ href }}"
+  {% endif %}
+  {{ attributes -}}
+>{% block content %}{% endblock %}</{{ tag }}>

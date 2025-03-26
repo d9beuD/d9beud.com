@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vincent BATHELIER | Portfolio{% endblock %}
+
+{% block body %}
+<section class="bg-grid">
+  <div class="bg-gradient-to-bottom py-8">
+    <div class="container">
+      <div class="mx-auto w-md-75 flex flex-column text-md-center">
+        <h1 class="display-3 fw-bold lh-1 mb-4">
+          Développeur Web Freelance.
+        </h1>
+
+        <p class="lead fs-4 lh-1 w-md-75 mx-auto mb-4">
+          Passionné par le développement web depuis plus de 10 ans,
+          je vous accompagne dans la réalisation de vos projets web.
+        </p>
+
+        <div class="row g-2 justify-content-md-center">
+          <div class="col-auto">
+            <twig:Button href="#" icon>
+              <span>Mes applications</span>
+              <twig:Icon name="arrow-right-long" />
+            </twig:Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-body-tertiary pt-5 pb-6">
+  <div class="container">
+    <div class="row justify-content-center align-items-center gy-5">
+      <div class="col-auto" style="max-width: min(24rem, 100%);">
+        <div class="card mt-n7 border-0 rounded-3 shadow overflow-hidden">
+        <img src="{{ asset('images/me.webp') }}" alt="Photo de profil de Vincent Bathelier" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">Vincent BATHELIER</h2>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md">
+        <span class="badge bg-primary-subtle text-primary-emphasis mb-3">Expérience</span>
+        <h2 class="fw-bold mb-3">Mon parcours.</h2>
+        <p>
+          Après 5 ans d’études à l’école EPSI Montpellier dont 3 en alternance, 
+          j’ai co-fondé mon entreprise Codevia. 
+          En parallèle, j’ai lancé mon activité de développeur web freelance.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

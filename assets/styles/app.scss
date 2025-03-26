@@ -2,14 +2,39 @@
 
 $color-mode-type: media-query;
 $modal-fade-transform: scale(.8);
+$enable-negative-margins: true;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+);
+
 
 @import "../../vendor/twbs/bootstrap/scss/variables";
 @import "../../vendor/twbs/bootstrap/scss/variables-dark";
 @import "../../vendor/twbs/bootstrap/scss/maps";
 @import "../../vendor/twbs/bootstrap/scss/mixins";
 @import "../../vendor/twbs/bootstrap/scss/root";
-
 @import "../../vendor/twbs/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities, (
+    "width": map-merge(
+      map-get($utilities, "width"), (
+        responsive: true,
+      )
+    )
+  )
+);
+
 @import "../../vendor/twbs/bootstrap/scss/reboot";
 @import "../../vendor/twbs/bootstrap/scss/type";
 @import "../../vendor/twbs/bootstrap/scss/images";
@@ -45,3 +70,38 @@ $modal-fade-transform: scale(.8);
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../../vendor/twbs/bootstrap/scss/utilities/api";
+
+.bg-gradient-to-bottom {
+  background: linear-gradient(180deg, var(--bs-tertiary-bg) 10%, transparent 90%);
+}
+
+.bg-grid {
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(233 236 239 / 1)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  background-position: bottom 1px center;
+}
+
+@include color-mode(dark) {
+  .bg-grid {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  }
+}
+
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  margin-left: calc($spacer * .25);
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  margin-left: calc($spacer * .5);
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  margin-left: calc($spacer);
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  margin-left: calc($spacer * 1.5);
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  margin-left: calc($spacer * 3);
+}

@@ -105,3 +105,10 @@ $utilities: map-merge(
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
   margin-left: calc($spacer * 3);
 }
+
+.container-svg {
+  & svg {
+    width: auto !important;
+    height: 100% !important;
+  }
+}

@@ -4,7 +4,7 @@
 
 {% block body %}
 <section class="bg-grid">
-  <div class="bg-gradient-to-bottom py-8">
+  <div class="bg-gradient-to-bottom pb-8 pt-4 pt-sm-6 pt-lg-8">
     <div class="container">
       <div class="mx-auto w-md-75 flex flex-column text-md-center">
         <h1 class="display-3 fw-bold lh-1 mb-4">
@@ -31,24 +31,168 @@
 
 <section class="bg-body-tertiary pt-5 pb-6">
   <div class="container">
-    <div class="row justify-content-center align-items-center gy-5">
-      <div class="col-auto" style="max-width: min(24rem, 100%);">
+    <div class="row justify-content-around align-items-center gy-5">
+      <div class="col-auto" style="max-width: min(20rem, 100%);">
         <div class="card mt-n7 border-0 rounded-3 shadow overflow-hidden">
         <img src="{{ asset('images/me.webp') }}" alt="Photo de profil de Vincent Bathelier" class="card-img-top">
           <div class="card-body">
-            <h2 class="card-title">Vincent BATHELIER</h2>
+            <h2 class="card-title h4 fw-bold">Vincent BATHELIER</h2>
+            
+            <div class="row g-2 mt-n3">
+              <div class="col-auto">
+                <span class="badge bg-primary-subtle text-primary-emphasis">backend</span>
+              </div>
+              <div class="col-auto">
+                <span class="badge bg-success-subtle text-success-emphasis">frontend</span>
+              </div>
+              <div class="col-auto">
+                <span class="badge bg-secondary-subtle text-secondary-emphasis">ci / cd</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       
-      <div class="col-12 col-md">
-        <span class="badge bg-primary-subtle text-primary-emphasis mb-3">Expérience</span>
-        <h2 class="fw-bold mb-3">Mon parcours.</h2>
-        <p>
+      <div class="col-12 col-md col-lg-6">
+        <div class="d-inline-block rounded-4 p-3 bg-warning text-warning display-5 mb-3" style="--bs-bg-opacity: 0.1">
+          <twig:Icon name="signs-post" fixedWidth />
+        </div>
+        
+        <h2 class="display-5 fw-semibold mb-3">Mon parcours.</h2>
+        
+        <p class="lead mb-4">
           Après 5 ans d’études à l’école EPSI Montpellier dont 3 en alternance, 
           j’ai co-fondé mon entreprise Codevia. 
           En parallèle, j’ai lancé mon activité de développeur web freelance.
         </p>
+        
+        <twig:Button variant="secondary" icon>
+          <span>Mes prestations</span>
+          <twig:Icon name="arrow-right-long" />
+        </twig:Button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-body py-8">
+  <div class="container">
+    <div class="mb-4">
+        <div class="d-inline-block rounded-4 p-3 bg-success text-success display-5 mb-3" style="--bs-bg-opacity: 0.1">
+          <twig:Icon name="code" fixedWidth />
+        </div>
+
+        <h2 class="display-5 fw-semibold mb-3">Mes outils</h2>
+        
+        <div class="row">
+          <div class="col-lg-7">
+            <p>
+              Dans le monde du développement web, la diversité des technologies est à la fois une richesse et un défi. 
+              Face à une multitude d’outils, de langages et de frameworks, il est essentiel de faire des choix 
+              stratégiques pour approfondir son expertise et bâtir des solutions solides. 
+            </p>
+          </div>
+          
+          <div class="col-lg-7">
+            <p>
+              Plutôt que de tout maîtriser superficiellement, j’ai sélectionné les technologies qui me permettent d’être efficace, 
+              performant et en phase avec les besoins des projets que je réalise.
+            </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="bg-grid rounded-4 border overflow-hidden">
+      <div class="bg-gradient-to-bottom p-5">
+        <div class="row justify-content-center gy-5 gx-4">
+          <div class="col-md-6 col-lg-4">
+            <twig:Svg 
+              src="@images/frameworks/vue.svg" 
+              class="mb-3"
+              style="height: 4rem;" 
+            />
+            <h3>
+              <a href="https://vuejs.org" class="link-body-emphasis icon-link" target="_blank">
+                Vue.js
+                <small><twig:Icon name="up-right-from-square" size="xs"/></small>
+              </a>
+            </h3>
+            <p>
+              Un framework accessible, performant et polyvalent pour créer des interfaces utilisateur Web.
+            </p>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <twig:Svg 
+              src="@images/frameworks/typescript.svg" 
+              class="mb-3"
+              style="height: 4rem;" 
+            />
+            <h3>
+              <a href="https://www.typescriptlang.org" class="link-body-emphasis icon-link" target="_blank">
+                TypeScript
+                <small><twig:Icon name="up-right-from-square" size="xs"/></small>
+              </a>
+            </h3>
+            <p>
+              TypeScript est un langage de programmation fortement typé s'appuyant sur JavaScript,
+              offrant de meilleurs outils à n'importe quelle échelle.
+            </p>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <twig:Svg 
+              src="@images/frameworks/sass.svg" 
+              class="mb-3"
+              style="height: 4rem;" 
+            />
+            <h3>
+              <a href="https://sass-lang.com" class="link-body-emphasis icon-link" target="_blank">
+                Sass
+                <small><twig:Icon name="up-right-from-square" size="xs"/></small>
+              </a>
+            </h3>
+            <p>
+              Sass est le langage d'extension CSS de qualité professionnelle le plus mature,
+              le plus stable et le plus puissant au monde.
+            </p>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <twig:Svg 
+              src="@images/frameworks/symfony.svg" 
+              class="mb-3"
+              style="height: 4rem;" 
+            />
+            <h3>
+              <a href="https://symfony.com" class="link-body-emphasis icon-link" target="_blank">
+                Symfony
+                <small><twig:Icon name="up-right-from-square" size="xs"/></small>
+              </a>
+            </h3>
+            <p>
+              Le principal framework PHP pour créer des sites Web et des applications Web.
+              Construit avec les composants Symfony.
+            </p>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <twig:Svg 
+              src="@images/frameworks/php.svg" 
+              class="mb-3"
+              style="height: 4rem;" 
+            />
+            <h3>
+              <a href="https://php.net" class="link-body-emphasis icon-link" target="_blank">
+                PHP
+                <small><twig:Icon name="up-right-from-square" size="xs"/></small>
+              </a>
+            </h3>
+            <p>
+              Un langage de script populaire à usage général particulièrement adapté au développement web.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

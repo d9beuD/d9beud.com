@@ -21,7 +21,7 @@ final class Button
         $resolver = new OptionsResolver();
         $resolver->setIgnoreUndefined(true);
 
-        $resolver->setDefaults(['href' => null]);
+        $resolver->setDefaults(['href' => '']);
         $resolver->setDefaults(['variant' => 'primary']);
         $resolver->setAllowedValues('variant', ['primary', 'secondary', 'danger']);
 
@@ -33,10 +33,10 @@ final class Button
 
     public function mount(string $href): void
     {
-        if (null !== $href) {
+        if (!empty($href)) {
             $this->tag = 'a';
         } else {
-            $this->tag = 'test';
+            $this->tag = 'button';
         }
     }
 }

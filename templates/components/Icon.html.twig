@@ -1,3 +1,7 @@
+{% set classes = ['fa-' ~ family, 'fa-' ~ style, 'fa-' ~ name, 'fa-' ~ size] %}
+{% if fixedWidth %}
+    {% set classes = classes|merge(['fa-fw']) %}
+{% endif %}
 <i {{ attributes.defaults({
-    class: ['fa-' ~ family, 'fa-' ~ style, 'fa-' ~ name]|join(' '),
+    class: classes|join(' '),
 }) }}></i>

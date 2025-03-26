@@ -8,7 +8,8 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 final class Icon
 {
     public string $name;
-    public string $size;
+    public string $size = 'md';
     public string $family = 'duotone';
     public string $style = 'regular';
+    public bool $fixedWidth = false;
 }

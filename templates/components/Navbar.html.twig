@@ -1,0 +1,23 @@
+<nav {{ attributes.defaults({ 
+  class: ['navbar', 'navbar-expand-' ~ expandBreakpoint, 'bg-body-tertiary']|join(' ')
+}) }}>
+  <div class="container">
+    <a class="navbar-brand" href="/">{% block brand %}{% endblock %}</a>
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#main-navbar-collapse" 
+      aria-controls="main-navbar-collapse" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="main-navbar-collapse">
+      <ul class="navbar-nav me-auto">{% block content %}{% endblock %}</ul>
+      <ul class="navbar-nav">{% block content_end %}{% endblock %}</ul>
+    </div>
+  </div>
+</nav>

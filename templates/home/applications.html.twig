@@ -17,28 +17,15 @@ design et innovation, pour répondre aux besoins uniques de chaque projet.
 
       <div class="row">
         <div class="col-lg-6">
-          <div class="ratio ratio-21x9">
-            <div class="bg-banner border rounded-5 overflow-hidden d-flex flex-column p-3 text-light" style="
-              --color: 37deg 37% 37%;
-              --url: url('{{ asset('images/applications/genealogist-banner.png') }}');
-            ">
-              <div class="align-self-center my-auto" style="max-height: 10rem; height: auto; min-height: 3rem;">
-                <img src="{{ asset('images/applications/genealogist.png') }}" alt="" style="height: 100%; width: auto;">
-              </div>
-              
-              <div class="row g-1 align-items-end">
-                <div class="col lh-1">
-                  <h2 class="h5 fw-bold mb-0">Genealogist</h2>
-                  <p class="mb-0 line-clamp overflow-hidden">
-                    Renseignez votre généalogie sur une interface simple et intuitive, puis visualisez votre arbre simplement.
-                  </p>
-                </div>
-                <div class="col-auto">
-                  <a href="https://genealogist.d9beud.com" class="btn btn-light rounded-pill shadow-sm">Ouvrir</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <twig:ApplicationPreview
+            color="37deg 37% 37%"
+            icon="{{ asset('images/applications/genealogist.png') }}"
+            banner="{{ asset('images/applications/genealogist-banner.png') }}"
+            title="Genealogist"
+            href="https://genealogist.d9beud.com"
+          >
+            Renseignez votre généalogie sur une interface simple et intuitive, puis visualisez votre arbre simplement.
+          </twig:ApplicationPreview>
         </div>
       </div>
     </div>

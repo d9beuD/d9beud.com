@@ -1,0 +1,23 @@
+{% props color = null, banner = null, icon = null, href = null, title = null %}
+<div class="ratio ratio-21x9">
+  <div class="bg-banner border rounded-5 overflow-hidden d-flex flex-column p-3 text-light" style="
+    --color: {{ color }};
+    --url: url('{{ banner }}');
+  ">
+    <div class="align-self-center my-auto" style="max-height: 10rem; height: auto; min-height: 3rem;">
+      <img src="{{ icon }}" alt="" style="height: 100%; width: auto;">
+    </div>
+    
+    <div class="row g-1 align-items-end">
+      <div class="col lh-1">
+        <h2 class="h5 fw-bold mb-0">{{ title }}</h2>
+        <p class="mb-0 line-clamp overflow-hidden" title="{{ block('content') }}">
+          {% block content %}{% endblock %}
+        </p>
+      </div>
+      <div class="col-auto">
+        <twig:Button href="{{ href }}" variant="light" rounded="pill" class="shadow-sm">Ouvrir</twig:Button>
+      </div>
+    </div>
+  </div>
+</div>

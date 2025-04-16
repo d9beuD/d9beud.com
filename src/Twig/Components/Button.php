@@ -14,6 +14,7 @@ final class Button
     public bool $icon = false;
     public string $href;
     public string $tag = 'button';
+    public ?string $rounded = null;
 
     #[PreMount]
     public function preMount(array $data): array
@@ -23,7 +24,7 @@ final class Button
 
         $resolver->setDefaults(['href' => '']);
         $resolver->setDefaults(['variant' => 'primary']);
-        $resolver->setAllowedValues('variant', ['primary', 'secondary', 'danger']);
+        $resolver->setAllowedValues('variant', ['primary', 'secondary', 'danger', 'light']);
 
         $resolver->setDefaults(['size' => 'md']);
         $resolver->setAllowedValues('size', ['sm', 'md', 'lg']);

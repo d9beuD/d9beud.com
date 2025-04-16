@@ -25,7 +25,7 @@
   },
 ) %}
 <{{ tag }} 
-  class="{{ button.apply({variant: variant, size}, attributes.render('class'), icon ? 'd-flex space-x-2 align-items-center') }}" 
+  class="{{ button.apply({variant: variant, size, rounded}, attributes.render('class'), icon ? 'd-flex space-x-2 align-items-center') }}" 
   {% if tag is same as('a') %}
     href="{{ href }}"
   {% endif %}

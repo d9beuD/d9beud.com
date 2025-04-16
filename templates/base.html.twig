@@ -11,6 +11,9 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+    {% block preloads %}
+    {% endblock %}
+
     {% block stylesheets %}
       <link rel="stylesheet" href="{{ asset('styles/app.scss') }}">
       <link rel="stylesheet" href="{{ asset('fontawesome-kit/css/all.min.css') }}">

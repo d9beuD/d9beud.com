@@ -1,5 +1,9 @@
 {% extends 'base.html.twig' %}
 
+{% block preloads %}
+  <link rel="preload" as="image" href="{{ asset('images/me-444.webp') }}" />
+{% endblock %}
+
 {% block title %}Développeur Web Freelance{% endblock %}
 {% block description %}
 Après 5 ans d’études à l’école EPSI Montpellier dont 3 en alternance, 

@@ -1,0 +1,19 @@
+{% props
+  variant = 'primary',
+  icon = null,
+%}
+{% set iconSection = html_cva(
+  variants: {
+    variant: {
+      primary: 'text-primary bg-primary',
+      secondary: 'text-secondary bg-secondary',
+      success: 'text-success bg-success',
+      warning: 'text-warning bg-warning',
+      danger: 'text-danger bg-danger',
+      info: 'text-info bg-info',
+    },
+  }
+) %}
+<div class="{{ iconSection.apply({ variant }) }} d-inline-block rounded-4 p-3 display-5 mb-3" style="--bs-bg-opacity: 0.1">
+  <twig:Icon name="{{ icon }}" fixedWidth />
+</div>

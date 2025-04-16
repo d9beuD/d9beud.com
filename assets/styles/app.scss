@@ -97,6 +97,16 @@ body {
   }
 }
 
+.bg-banner {
+  --color: 0deg 0% 100%;
+  --url: none;
+
+  background: linear-gradient(0deg, hsl(var(--color) / 1) 10%, hsl(var(--color) / .2) 100%), var(--url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
   margin-left: calc($spacer * .25);
 }
@@ -131,4 +141,11 @@ body {
   &:hover {
     opacity: .7;
   }
+}
+
+.line-clamp {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
 }

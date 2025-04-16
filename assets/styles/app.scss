@@ -28,15 +28,12 @@ $spacers: (
 $utilities: map-merge(
   $utilities, (
     "width": map-merge(
-      map-get($utilities, "width"), (
-        responsive: true,
-      )
-    )
-  ), (
+      map-get($utilities, "width"),
+      ( responsive: true ),
+    ),
     "height": map-merge(
-      map-get($utilities, "height"), (
-        responsive: true,
-      )
+      map-get($utilities, "height"), 
+      ( responsive: true ),
     )
   )
 );

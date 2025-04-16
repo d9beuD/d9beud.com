@@ -74,7 +74,7 @@ $utilities: map-merge(
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../../vendor/twbs/bootstrap/scss/utilities/api";
 
-main {
+body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;

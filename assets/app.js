@@ -6,3 +6,5 @@ import './bootstrap.js';
  * which should already be in your base.html.twig.
  */
 import './vendor/bootstrap/bootstrap.index.js';
+import './fontawesome-kit/css/fontawesome.min.css';
+import './fontawesome-kit/css/duotone-regular.min.css';

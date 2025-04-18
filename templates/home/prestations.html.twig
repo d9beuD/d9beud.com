@@ -1,1 +1,67 @@
 {% extends 'base.html.twig' %}
+
+{% block title %}Mes Prestations{% endblock %}
+
+{% block body %}
+  <section class="bg-grid position-relative">
+    <div class="bg-gradient-to-bottom pt-8 pb-5">
+      <div class="container">
+        <twig:IconSection variant="success" icon="briefcase" />
+  
+        <h1 class="fw-bold">
+          Mes prestations
+          <small class="text-success">Sur mesure, sans superflu.</small>
+        </h1>
+
+        <p class="lead w-md-75">
+          Chaque projet est unique, et je veille à adapter mes prestations à 
+          vos besoins spécifiques. Ici, pas de solutions génériques ou de jargon
+          inutile : je m’adapte à vos besoins, vos contraintes et votre rythme.
+          Le but ? Créer ensemble un produit clair, fiable, et pensé pour durer.
+        </p>
+      </div>
+
+      <div class="pb-8"></div>
+    </div>
+  </section>
+    
+  <section class="pb-8">
+    <div class="container">
+      <div class="bg-body-tertiary border rounded-4 overflow-hidden shadow-sm mx-auto mt-n7 position-relative" style="max-width: 60rem;">
+        <div class="row g-0 align-items-stretch">
+          <div class="col-md">
+            <div class="p-3 bg-body rounded-bottom-5 rounded-start-md-0 rounded-end-md-5 border-bottom border-bottom-md-0 border-end-md shadow-sm h-100 d-flex flex-column justify-content-center">
+              <div>
+                <twig:IconSection variant="warning" icon="lightbulb-on" class="d-inline-block" />
+              </div>
+              <h1 class="fw-bold">Une idée ? <span class="text-warning">Parlons-en.</span></h1>
+  
+              <p class="lead">
+                Derrière chaque idée se cache un projet qui mérite d’exister.
+                Si vous avez quelque chose en tête, même en cours de réflexion,
+                je serai ravi d’en discuter et de voir comment lui donner vie.
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-md">
+            <div class="p-3 h-100">
+              {{ form_start(form) }}
+                {{ form_row(form.name) }}
+                {{ form_row(form.email) }}
+                {{ form_row(form.content) }}
+  
+                <div class="d-flex justify-content-end">
+                  <twig:Button icon>
+                    <span>Envoyer</span>
+                    <twig:Icon name="arrow-right-long" />
+                  </twig:Button>
+                </div>
+              {{ form_end(form) }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,11 @@
+// Navbar overrides
+// --------------------------------------------------
+
+.navbar .navbar-nav .nav-link {
+    @extend .rounded-3;
+    
+    &.active {
+        @extend .bg-body;
+        @extend .shadow-sm;
+    }
+}

@@ -46,18 +46,33 @@
   
           <div class="col-md">
             <div class="p-3 h-100">
-              {{ form_start(form) }}
-                {{ form_row(form.name) }}
-                {{ form_row(form.email) }}
-                {{ form_row(form.content) }}
-  
-                <div class="d-flex justify-content-end">
-                  <twig:Button icon>
-                    <span>Envoyer</span>
-                    <twig:Icon name="arrow-right-long" />
-                  </twig:Button>
-                </div>
-              {{ form_end(form) }}
+              <turbo-frame id="contact-form">
+                {% set flashes = app.flashes %}
+                {% if flashes|length > 0 %}
+                  <div class="mb-3">
+                    {% for label, messages in flashes %}
+                      {% for message in messages %}
+                          <div class="alert alert-{{ label }} alert-dismissible fade show">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+                          </div>
+                      {% endfor %}
+                    {% endfor %}
+                  </div>
+                {% endif %}
+                {{ form_start(form) }}
+                  {{ form_row(form.name) }}
+                  {{ form_row(form.email) }}
+                  {{ form_row(form.content) }}
+    
+                  <div class="d-flex justify-content-end">
+                    <twig:Button icon>
+                      <span>Envoyer</span>
+                      <twig:Icon name="arrow-right-long" />
+                    </twig:Button>
+                  </div>
+                {{ form_end(form) }}
+              </turbo-frame>
             </div>
           </div>
         </div>

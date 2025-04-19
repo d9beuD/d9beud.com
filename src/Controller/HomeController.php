@@ -28,17 +28,9 @@ final class HomeController extends AbstractController
     public function prestations(Request $request, EntityManagerInterface $entityManager): Response
     {
         $message = new Message();
-        $alwaysEmptyMessage = clone $message;
-        $form = $this->createForm(MessageType::class, $message);
-        $form->handleRequest($request);
-        
-        if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager->persist($message);
-            $entityManager->flush();
-
-            $this->addFlash('success', 'Votre message a bien été reçu. Je vous répondrez dans les plus brefs délais.');
-            $form = $this->createForm(MessageType::class, $alwaysEmptyMessage);
-        }
+        $form = $this->createForm(MessageType::class, $message, [
+            'action' => $this->generateUrl('app_message_new'),
+        ]);
 
         return $this->render('home/prestations.html.twig', [
             'form' => $form,

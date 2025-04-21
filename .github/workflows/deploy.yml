@@ -25,6 +25,15 @@ jobs:
           echo "APP_DEBUG=0" >> .env.local
           touch .env.prod.local
           echo "${{ secrets.DATABSE_URL }}" >> .env.prod.local
+      
+      - name: Cache Composer packages
+        id: composer-cache
+        uses: actions/cache@v3
+        with:
+          path: vendor
+          key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-php-
           
       - name: Install Composer dependencies
         uses: ramsey/composer-install@v2

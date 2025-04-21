@@ -39,7 +39,7 @@ jobs:
         uses: ramsey/composer-install@v2
         with:
           dependency-versions: locked
-          composer-options: "--ignore-platform-reqs --optimize-autoloader --no-dev"
+          composer-options: " -q --no-ansi --no-interaction --no-progress --prefer-dist --ignore-platform-reqs --optimize-autoloader --no-dev"
 
       - name: Import assets
         run: |

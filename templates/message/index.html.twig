@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Messages reçus{% endblock %}
+
+{% block body %}
+  <div class="container my-5">
+    <h1>{{ block('title') }}</h1>
+
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Content</th>
+            <th>CreatedAt</th>
+            <th>actions</th>
+          </tr>
+        </thead>
+        <tbody class="text-truncate">
+        {% for message in messages %}
+          <tr>
+            <td>{{ message.id }}</td>
+            <td>{{ message.name }}</td>
+            <td><a href="mailto:{{ message.email }}">{{ message.email }}</a></td>
+            <td>{{ message.content }}</td>
+            <td>{{ message.createdAt ? message.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            <td>
+              <a href="{{ path('app_message_show', {'id': message.id}) }}">show</a>
+              <a href="{{ path('app_message_edit', {'id': message.id}) }}">edit</a>
+            </td>
+          </tr>
+        {% else %}
+          <tr>
+            <td colspan="6">no records found</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+{% endblock %}

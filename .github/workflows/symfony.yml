@@ -37,7 +37,7 @@ jobs:
     
     - name: Install Dependencies
       run: |
-        composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+        composer install -q --no-ansi --no-interaction --no-progress --prefer-dist
         php bin/console sass:build
         php bin/console asset-map:compile
         php bin/console assets:install

@@ -31,6 +31,16 @@
         <twig:NavItem name="app_home_applications" checkPath="app_home_applications">Applications</twig:NavItem>
         <twig:NavItem name="app_home_prestations" checkPath="app_home_prestations">Prestations</twig:NavItem>
         <twig:NavItem href="https://blog.d9beud.com">Blog</twig:NavItem>
+
+        {% if app.user %}
+          <twig:NavItem name="app_message_index" checkPath="app_admin">Administration</twig:NavItem>
+        {% endif %}
+        
+        <twig:block name="content_end">
+          {% if app.user %}
+            <twig:NavItem name="app_message_index" checkPath="app_logout">Déconnexion</twig:NavItem>
+          {% endif %}
+        </twig:block>
     </twig:Navbar>
 
     <main>{% block body %}{% endblock %}</main>

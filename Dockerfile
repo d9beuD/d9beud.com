@@ -19,6 +19,7 @@ RUN apt-get update -y --allow-insecure-repositories && \
     rsync \
     unzip \
     sudo \
+    libsqlite3-dev \
     zip && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -30,6 +31,7 @@ RUN docker-php-ext-configure gd --with-freetype --with-jpeg && \
     mbstring \
     opcache \
     pdo_mysql \
+    pdo_sqlite \
     zip
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

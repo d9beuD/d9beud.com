@@ -18,6 +18,18 @@
       <link rel="stylesheet" href="{{ asset('styles/app.scss') }}">
     {% endblock %}
 
+    {% block gtag %}
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KNY0DH8D6"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4KNY0DH8D6');
+      </script>
+    {% endblock %}
+
     {% block javascripts %}
       {% block importmap %}{{ importmap('app') }}{% endblock %}
     {% endblock %}

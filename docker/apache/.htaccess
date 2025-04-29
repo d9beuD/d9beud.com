@@ -14,3 +14,9 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^(.*)$ index.php [QSA,L]
 </IfModule>
+
+<IfModule pagespeed_module>
+    ModPagespeed On
+    ModPagespeedRewriteLevel PassThrough
+    ModPagespeedEnableFilters extend_cache,hint_preload_subresources,inline_css,inline_javascript,rewrite_javascript,insert_dns_prefetch,strip_image_meta_data
+</IfModule>

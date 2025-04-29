@@ -1,3 +1,10 @@
+# o2switch pagespeed start / DO NOT REMOVE OR EDIT
+<IfModule pagespeed_module>
+ModPagespeed on
+ModPagespeedRewriteLevel PassThrough
+ModPagespeedEnableFilters extend_cache,hint_preload_subresources,inline_css,inline_javascript,rewrite_javascript,insert_dns_prefetch
+</IfModule>
+# o2switch pagespeed end / DO NOT REMOVE OR EDIT
 #
 # EDIT ME IN `/docker/apache/.htaccess` ONLY
 #
@@ -13,10 +20,4 @@
 
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^(.*)$ index.php [QSA,L]
-</IfModule>
-
-<IfModule pagespeed_module>
-    ModPagespeed On
-    ModPagespeedRewriteLevel PassThrough
-    ModPagespeedEnableFilters extend_cache,hint_preload_subresources,inline_css,inline_javascript,rewrite_javascript,insert_dns_prefetch,strip_image_meta_data
 </IfModule>
